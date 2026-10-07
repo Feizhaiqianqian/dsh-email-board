@@ -1,0 +1,28 @@
+# dsh-email-board：邮件看板
+#
+# 把 dsh-email 各账号的未读邮件汇总成卡片列表，展示在右侧栏的「邮件看板」tab 里。
+# 取数是**手动**的：打开 tab 拉一次，之后只有点「刷新」才重新读邮箱（没有定时轮询）。
+# 它不自己保存任何邮箱凭据，而是直接读 dsh-email 的设置（设置 → 邮件），
+# 所以请先配好 dsh-email。
+#
+# 配置项（都可以在 profile 的 cordis.patch.yml 里覆盖）：
+#   accounts        想看哪些账号；空数组 = dsh-email 里配置的全部账号。
+#                   名字必须和 dsh-email 设置里的账号名一致（如 "163工作邮箱"）。
+#   folder          指定文件夹；空字符串 = 各账号自己的 inboxFolder。
+#   perAccountLimit 每个账号最多取多少封未读邮件的信封（1-100，默认 20）。
+#   cacheMs         宿主侧结果缓存毫秒（默认 20000），避免连点刷新打爆 IMAP。
+#
+# 覆盖示例：
+#   - id: email-board
+#     name: dsh-email-board
+#     config:
+#       accounts: ["163工作邮箱", "QQ邮箱"]
+- insert:
+    - id: email-board
+      name: dsh-email-board
+      config:
+        accounts: []
+        folder: ""
+        perAccountLimit: 20
+        cacheMs: 20000
+        timeoutMs: 25000

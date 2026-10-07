@@ -1,0 +1,14 @@
+# 依赖与运行时产物
+node_modules/
+
+# 本机真机样本（由 test/offline-route.mjs --fixture 生成，含真实邮箱数据，绝不提交）
+test/fixture-state.local.json
+
+# 编辑器与系统杂物
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+pnpm-debug.log*

@@ -1,0 +1,98 @@
+{
+  "ok": true,
+  "value": {
+    "fetchedAt": 1791358839936,
+    "defaultAccount": "工作邮箱",
+    "accountNames": ["工作邮箱", "私人邮箱", "订阅邮箱"],
+    "perAccountLimit": 5,
+    "totals": { "unread": 10, "failed": 0, "accounts": 3 },
+    "accounts": [
+      {
+        "name": "工作邮箱",
+        "address": "work@example.com",
+        "folder": "INBOX",
+        "totalUnread": 3,
+        "truncated": false,
+        "messages": [
+          {
+            "uid": 4201,
+            "subject": "第三季度评审材料（初稿）",
+            "from": [{ "name": "林工", "address": "lin@example.com" }],
+            "date": "2026-10-07T06:46:30.000Z",
+            "flagged": false,
+            "hasAttachments": true
+          },
+          {
+            "uid": 4198,
+            "subject": "Re: 接口联调时间确认",
+            "from": [{ "name": "Alice Chen", "address": "alice.chen@example.com" }],
+            "date": "2026-10-07T02:15:00.000Z",
+            "flagged": false,
+            "hasAttachments": false
+          },
+          {
+            "uid": 4180,
+            "subject": "构建流水线失败：nightly-20261006",
+            "from": [{ "name": "CI Bot", "address": "ci@example.com" }],
+            "date": "2026-10-06T18:03:12.000Z",
+            "flagged": true,
+            "hasAttachments": false
+          }
+        ]
+      },
+      {
+        "name": "私人邮箱",
+        "address": "me@example.com",
+        "folder": "INBOX",
+        "totalUnread": 2,
+        "truncated": false,
+        "messages": [
+          {
+            "uid": 513,
+            "subject": "你的订阅续费成功",
+            "from": [{ "name": "示例音乐", "address": "noreply@example.com" }],
+            "date": "2026-10-06T02:19:48.000Z",
+            "flagged": false,
+            "hasAttachments": false
+          },
+          {
+            "uid": 501,
+            "subject": "检测到新设备登录",
+            "from": [
+              { "name": "示例账号安全", "address": "security@example.com" },
+              { "name": "示例客服", "address": "support@example.com" }
+            ],
+            "date": "2026-09-28T09:41:05.000Z",
+            "flagged": false,
+            "hasAttachments": false
+          }
+        ]
+      },
+      {
+        "name": "订阅邮箱",
+        "address": "news@example.com",
+        "folder": "INBOX",
+        "totalUnread": 5,
+        "truncated": true,
+        "messages": [
+          {
+            "uid": 77,
+            "subject": "本周技术周刊：五个值得一读的项目",
+            "from": [{ "name": "示例周刊", "address": "weekly@example.com" }],
+            "date": "2026-10-05T23:30:00.000Z",
+            "flagged": false,
+            "hasAttachments": false
+          },
+          {
+            "uid": 76,
+            "subject": "秋季特卖开始了",
+            "from": [{ "name": "示例商店", "address": "store@example.com" }],
+            "date": "2026-10-04T11:02:44.000Z",
+            "flagged": false,
+            "hasAttachments": true
+          }
+        ]
+      }
+    ]
+  }
+}
